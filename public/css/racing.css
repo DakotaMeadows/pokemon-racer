@@ -1,4 +1,4 @@
-.index-bg {
+.game-bg {
   background-image: url('../img/background.jpg');
   /* Set rules to fill background */
   min-height: 100%;
@@ -46,7 +46,7 @@
   height: 100%;
 }
 
-#victory {
+h2 {
   text-align: center;
 
 }

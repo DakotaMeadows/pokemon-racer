@@ -1,0 +1,16 @@
+<% if current_user %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/js/mousetrap.js"></script>
+  <script src="/js/track.js"></script>
+  <script src="/js/pikachu.js"></script>
+  <script src="/js/lugia.js"></script>
+  <script src="/js/game.js"></script>
+
+  <div class="game-bg">
+    <h2>How to play: Spam Q for Pikachu, Spam P for Lugia. First to reach the end wins!</h2>
+    <h1 id="victory"></h1>
+    <div id="track"></div>
+  </div>
+<% else %>
+  <a href = '/'>You must first sign in!</a>
+<% end %>

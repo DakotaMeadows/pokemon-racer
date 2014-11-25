@@ -12,14 +12,22 @@ $(document).ready(function() {
     lugia.run();
   }, 'keyup')
 
-  setInterval(function () {
+  var conditions = setInterval(function() {
     if (pikachu.x + pikachu.width === track.width) {
-      $("#victory").html("Pikachu WINS!");
+      $("h2").html("Pikachu WINS!");
       Mousetrap.unbind('p', 'keyup');
+      clearInterval(conditions);
+      setTimeout(function() {window.location.href = "http://127.0.0.1:9393/"}, 1000);
     }
     else if (lugia.x + lugia.width === track.width) {
-      $("#victory").html("Lugia WINS!");
+      $("h2").html("Lugia WINS!");
       Mousetrap.unbind('q', 'keyup');
+      clearInterval(conditions);
+      setTimeout(function() {window.location.href = "http://127.0.0.1:9393/"}, 1000);
     };
+
   })
+
 });
+
+

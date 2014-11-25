@@ -1,0 +1,20 @@
+<% if current_user %>
+  <div class="logged_in_button">
+    <form action="/game" method="GET">
+      <input type="submit" value="Play">
+    </form>
+    <form action="/logout" method="GET">
+      <input type="submit" value="Logout">
+    </form>
+  </div>
+
+<% else %>
+  <div class="auth_buttons">
+    <form action="/signup" method="GET">
+      <input type="submit" value="Signup">
+    </form>
+    <form action="/login" method="Get">
+      <input type="submit" value="Login">
+    </form>
+  </div>
+<% end %>

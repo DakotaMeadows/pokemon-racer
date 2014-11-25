@@ -4,5 +4,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :password_digest
     end
+
+    add_index :users, :name, unique: true
+
   end
 end

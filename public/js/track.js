@@ -6,5 +6,3 @@ function Track(height, width) {
   this.$element.css('width', width);
   $('body').append(this.$element);
 }
-
-// <img src="public/img/background.jpg"/>
